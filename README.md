@@ -32,6 +32,17 @@ After the model value has been decided, just as a precaution, auto ARIMA is used
 Among the 3 models, the ARIMA model with p = 5, d = 0, and q = 5 was selected as it showed low mean squre error. Also, it showed in the auto ARIMA suggestion. After all this, decomposition of the data needs to be reverted back by multiplying all the forecasted values. A 30 day forecast of the closing value was done  and compared with actual closing values. The starting date is 2024-01-01 and end date is 2024-01-30. The graph is attached here.
 
 
+Limitation of the model:
+
+1) This model is only applicable for NVIDIA stocks. For other stocks, model needs to be trained on new set of data.
+2) The model does not take into account of other factors that could be responsible for drastic change in the closing price
+3) It is sensible to outliers.
+4) Without decomposing to several components trend, seasonal and residual, this model will not work.
+
+Improvements of the model:
+
+1) More fine-tuning is required and several other values of p and q needs to be tested.
+
 ![image](https://github.com/omi-akif/StockPred/assets/45337017/f39968fa-022a-4646-8fc7-7ab0a6a92cc8)
 
 
