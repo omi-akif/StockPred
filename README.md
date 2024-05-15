@@ -74,7 +74,7 @@ python3 -m venv /home/test/stock
 Make sure to activate the environment:
 
 ```
-source /home/test/weather/bin/activate
+source /home/test/stock/bin/activate
 
 ```
 
@@ -99,7 +99,7 @@ This will install all the requirements to the environment to run the file.
 
 <br> 
 
-And then, you just run the directory where the git repository has been saved.
+And then, you just type the command in the directory where the git repository has been saved.
 
 
 <br>
