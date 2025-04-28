@@ -1,0 +1,20 @@
+# aws autodeployment --
+name: AI Continous Deployment - AWS - Development Sever
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Deploy to EC2 on develop branch push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get all file list
+        uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo Hello, world!
